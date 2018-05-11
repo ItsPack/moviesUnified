@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+    <body>
+
+    	
+    	<nav class="uk-navbar-container" uk-navbar>
+		    <div class="nav-overlay uk-navbar-left">
+		    	<ul class="uk-navbar-nav">
+		            <li>
+		            	<a href=""><span class="uk-icon uk-margin-small-right" uk-icon="icon: tag"></span>Donate</a>
+		            </li>
+		            <li>
+		            	<a href=""><span class="uk-icon uk-margin-small-right" uk-icon="icon: user"></span>Account</a>
+		            </li>
+		        </ul>
+		    </div>
+		    <div class="nav-overlay uk-navbar-right">
+		        <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href=""></a>
+		    </div>
+		    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+		        <div class="uk-navbar-item uk-width-expand">
+		            <form class="uk-search uk-search-navbar uk-width-1-1">
+		                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+		            </form>
+		        </div>
+		        <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href=""></a>
+		    </div>
+		</nav>
+
+
+		<div class="uk-container">
+			<br>
+			<h1 class="uk-heading-primary">The Office</h1>
+			<form class="uk-form-stacked">
+			    <div class="uk-margin">
+			        <div class="uk-form-controls">
+			            <select class="uk-select" id="form-stacked-select">
+			                <option>Season 1</option>
+			                <option>Season 2</option>
+			                <option>Season 3</option>
+			                <option>Season 4</option>
+			                <option>Season 5</option>
+			                <option>Season 6</option>
+			                <option>Season 7</option>
+			                <option>Season 8</option>
+			                <option>Season 9</option>
+			            </select>
+			        </div>
+			    </div>
+			</form>
+			<br>
+		</div>
+
+		<div uk-grid>
+			<div class="uk-width-4-4@m">
+				<div uk-slider="center: true; finite: false">
+
+						<a style="position: fixed; top: calc(50% - 10px); left: 20px; z-index: 4" uk-tooltip="Previous Episode" href="" uk-slider-item="previous"><span class="uk-icon-button" uk-icon="chevron-left"></span></a>
+						<a style="position: fixed; top: calc(50% - 10px); right: 20px; z-index: 4" uk-tooltip="Next Episode" href="" uk-slider-item="next"><span class="uk-icon-button" uk-icon="chevron-right"></span></a>
+
+				    <div class="uk-position-relative uk-visible-toggle">
+
+				        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+				            <li>
+				                <div class="uk-card uk-card-default">
+				                    <div class="uk-card-media-top">
+						            	<video controls poster="assets/The_Office_TH.jpg">
+						            		<source src="assets/The_Office_EP1.mp4" type='video/mp4'/>
+						            	</video>
+				                    </div>
+				                    <div class="uk-card-body">
+				                        <article class="uk-article">
+
+										    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Pilot</a></h1>
+
+										    <p class="uk-article-meta">
+										    	<ul style="float: left;" class="uk-iconnav">
+											    	<li>984,353 views</li>
+												</ul>
+
+										    	<ul style="float: right;" class="uk-iconnav">
+											    	<li></li>
+											    	<li uk-tooltip="Heart Episode"><a href="" uk-icon="icon: heart">1,348 </a></li>
+											    	<li uk-tooltip="Share"><a href="" uk-icon="icon: forward"></a></li>
+												</ul>
+											</p>
+											<br>
+
+										    <p>The premiere episode introduces the boss and staff of the Dunder-Mifflin paper company in Scranton, Pennsylvania in a documentary about the workplace.</p>
+
+										    <div class="uk-container">
+										    	<br>
+										    	<hr class="uk-divider-icon">
+										    	<form class="uk-form-stacked">
+
+												    <div class="uk-margin">
+												        <label class="uk-form-label" for="form-stacked-text">Post a Comment</label>
+												        <div class="uk-form-controls">
+												            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+												        </div>
+												    </div>
+												</form>
+										    	<br>
+										    	<ul class="uk-comment-list">
+												    <li>
+												        <article class="uk-comment uk-visible-toggle">
+												            <header class="uk-comment-header uk-position-relative">
+												                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                    <div class="uk-width-auto">
+												                        <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                    </div>
+												                    <div class="uk-width-expand">
+												                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                    </div>
+												                </div>
+												                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												            </header>
+												            <div class="uk-comment-body">
+												                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												            </div>
+												        </article>
+												        <ul>
+												            <li>
+												                <article class="uk-comment uk-comment-primary uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												            <li>
+												                <article class="uk-comment uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												        </ul>
+												    </li>
+												</ul>
+										        <div>
+										            <a class="uk-button uk-button-text" href="">More Posts</a>
+										        </div>
+										    </div>
+
+										</article>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="uk-card uk-card-default">
+				                    <div class="uk-card-media-top">
+						            	<video controls poster="assets/The_Office_TH.jpg">
+						            		<source src="assets/The_Office_EP2.mp4" type='video/mp4'/>
+						            	</video>
+				                    </div>
+				                    <div class="uk-card-body">
+				                        <article class="uk-article">
+
+										    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Diversity Day</a></h1>
+
+										    <p class="uk-article-meta">
+										    	<ul style="float: left;" class="uk-iconnav">
+											    	<li>97,230 views</li>
+												</ul>
+
+										    	<ul style="float: right;" class="uk-iconnav">
+											    	<li></li>
+											    	<li uk-tooltip="Heart Episode"><a href="" uk-icon="icon: heart">112 </a></li>
+											    	<li uk-tooltip="Share"><a href="" uk-icon="icon: forward"></a></li>
+												</ul>
+											</p>
+											<br>
+
+										    <p>Michael's off color remark puts a sensitivity trainer in the office for a presentation, which prompts Michael to create his own.</p>
+
+										    <div class="uk-container">
+										    	<br>
+										    	<hr class="uk-divider-icon">
+										    	<form class="uk-form-stacked">
+
+												    <div class="uk-margin">
+												        <label class="uk-form-label" for="form-stacked-text">Post a Comment</label>
+												        <div class="uk-form-controls">
+												            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+												        </div>
+												    </div>
+												</form>
+										    	<br>
+										    	<ul class="uk-comment-list">
+												    <li>
+												        <article class="uk-comment uk-visible-toggle">
+												            <header class="uk-comment-header uk-position-relative">
+												                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                    <div class="uk-width-auto">
+												                        <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                    </div>
+												                    <div class="uk-width-expand">
+												                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                    </div>
+												                </div>
+												                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												            </header>
+												            <div class="uk-comment-body">
+												                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												            </div>
+												        </article>
+												        <ul>
+												            <li>
+												                <article class="uk-comment uk-comment-primary uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												            <li>
+												                <article class="uk-comment uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												        </ul>
+												    </li>
+												</ul>
+										        <div>
+										            <a class="uk-button uk-button-text" href="">More Posts</a>
+										        </div>
+										    </div>
+
+										</article>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="uk-card uk-card-default">
+				                    <div class="uk-card-media-top">
+						            	<video controls poster="assets/The_Office_TH.jpg">
+						            		<source src="assets/The_Office_EP3.mp4" type='video/mp4'/>
+						            	</video>
+				                    </div>
+				                    <div class="uk-card-body">
+				                        <article class="uk-article">
+
+										    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Health Care</a></h1>
+
+										    <p class="uk-article-meta">
+										    	<ul style="float: left;" class="uk-iconnav">
+											    	<li>75,654 views</li>
+												</ul>
+
+										    	<ul style="float: right;" class="uk-iconnav">
+											    	<li></li>
+											    	<li uk-tooltip="Heart Episode"><a href="" uk-icon="icon: heart">98 </a></li>
+											    	<li uk-tooltip="Share"><a href="" uk-icon="icon: forward"></a></li>
+												</ul>
+											</p>
+											<br>
+
+										    <p>Michael leaves Dwight in charge of picking the new healthcare plan for the staff, with disastrous results ahead.</p>
+
+										    <div class="uk-container">
+										    	<br>
+										    	<hr class="uk-divider-icon">
+										    	<form class="uk-form-stacked">
+
+												    <div class="uk-margin">
+												        <label class="uk-form-label" for="form-stacked-text">Post a Comment</label>
+												        <div class="uk-form-controls">
+												            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+												        </div>
+												    </div>
+												</form>
+										    	<br>
+										    	<ul class="uk-comment-list">
+												    <li>
+												        <article class="uk-comment uk-visible-toggle">
+												            <header class="uk-comment-header uk-position-relative">
+												                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                    <div class="uk-width-auto">
+												                        <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                    </div>
+												                    <div class="uk-width-expand">
+												                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                    </div>
+												                </div>
+												                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												            </header>
+												            <div class="uk-comment-body">
+												                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												            </div>
+												        </article>
+												        <ul>
+												            <li>
+												                <article class="uk-comment uk-comment-primary uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												            <li>
+												                <article class="uk-comment uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												        </ul>
+												    </li>
+												</ul>
+										        <div>
+										            <a class="uk-button uk-button-text" href="">More Posts</a>
+										        </div>
+										    </div>
+
+										</article>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="uk-card uk-card-default">
+				                    <div class="uk-card-media-top">
+						            	<video controls poster="assets/The_Office_TH.jpg">
+						            		<source src="assets/The_Office_EP4.mp4" type='video/mp4'/>
+						            	</video>
+				                    </div>
+				                    <div class="uk-card-body">
+				                        <article class="uk-article">
+
+										    <h1 class="uk-article-title"><a class="uk-link-reset" href="">The Alliance</a></h1>
+
+										    <p class="uk-article-meta">
+										    	<ul style="float: left;" class="uk-iconnav">
+											    	<li>132,497 views</li>
+												</ul>
+
+										    	<ul style="float: right;" class="uk-iconnav">
+											    	<li></li>
+											    	<li uk-tooltip="Heart Episode"><a href="" uk-icon="icon: heart">196 </a></li>
+											    	<li uk-tooltip="Share"><a href="" uk-icon="icon: forward"></a></li>
+												</ul>
+											</p>
+											<br>
+
+										    <p>Just for a laugh, Jim agrees to an alliance with Dwight regarding the downsizing rumors.</p>
+
+										    <div class="uk-container">
+										    	<br>
+										    	<hr class="uk-divider-icon">
+										    	<form class="uk-form-stacked">
+
+												    <div class="uk-margin">
+												        <label class="uk-form-label" for="form-stacked-text">Post a Comment</label>
+												        <div class="uk-form-controls">
+												            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+												        </div>
+												    </div>
+												</form>
+										    	<br>
+										    	<ul class="uk-comment-list">
+												    <li>
+												        <article class="uk-comment uk-visible-toggle">
+												            <header class="uk-comment-header uk-position-relative">
+												                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                    <div class="uk-width-auto">
+												                        <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                    </div>
+												                    <div class="uk-width-expand">
+												                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                    </div>
+												                </div>
+												                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												            </header>
+												            <div class="uk-comment-body">
+												                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												            </div>
+												        </article>
+												        <ul>
+												            <li>
+												                <article class="uk-comment uk-comment-primary uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												            <li>
+												                <article class="uk-comment uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												        </ul>
+												    </li>
+												</ul>
+										        <div>
+										            <a class="uk-button uk-button-text" href="">More Posts</a>
+										        </div>
+										    </div>
+
+										</article>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="uk-card uk-card-default">
+				                    <div class="uk-card-media-top">
+						            	<video controls poster="assets/The_Office_TH.jpg">
+						            		<source src="assets/The_Office_EP5.mp4" type='video/mp4'/>
+						            	</video>
+				                    </div>
+				                    <div class="uk-card-body">
+				                        <article class="uk-article">
+
+										    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Basketball</a></h1>
+
+										    <p class="uk-article-meta">
+										    	<ul style="float: left;" class="uk-iconnav">
+											    	<li>45,194 views</li>
+												</ul>
+
+										    	<ul style="float: right;" class="uk-iconnav">
+											    	<li></li>
+											    	<li uk-tooltip="Heart Episode"><a href="" uk-icon="icon: heart">68 </a></li>
+											    	<li uk-tooltip="Share"><a href="" uk-icon="icon: forward"></a></li>
+												</ul>
+											</p>
+											<br>
+
+										    <p>Michael and his staff challenge the warehouse workers to a basketball game with a bet looming over both parties.</p>
+
+										    <div class="uk-container">
+										    	<br>
+										    	<hr class="uk-divider-icon">
+										    	<form class="uk-form-stacked">
+
+												    <div class="uk-margin">
+												        <label class="uk-form-label" for="form-stacked-text">Post a Comment</label>
+												        <div class="uk-form-controls">
+												            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+												        </div>
+												    </div>
+												</form>
+										    	<br>
+										    	<ul class="uk-comment-list">
+												    <li>
+												        <article class="uk-comment uk-visible-toggle">
+												            <header class="uk-comment-header uk-position-relative">
+												                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                    <div class="uk-width-auto">
+												                        <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                    </div>
+												                    <div class="uk-width-expand">
+												                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                    </div>
+												                </div>
+												                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												            </header>
+												            <div class="uk-comment-body">
+												                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												            </div>
+												        </article>
+												        <ul>
+												            <li>
+												                <article class="uk-comment uk-comment-primary uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												            <li>
+												                <article class="uk-comment uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												        </ul>
+												    </li>
+												</ul>
+										        <div>
+										            <a class="uk-button uk-button-text" href="">More Posts</a>
+										        </div>
+										    </div>
+
+										</article>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="uk-card uk-card-default">
+				                    <div class="uk-card-media-top">
+						            	<video controls poster="assets/The_Office_TH.jpg">
+						            		<source src="assets/The_Office_EP6.mp4" type='video/mp4'/>
+						            	</video>
+				                    </div>
+				                    <div class="uk-card-body">
+				                        <article class="uk-article">
+
+										    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Hot Girl</a></h1>
+
+										    <p class="uk-article-meta">
+										    	<ul style="float: left;" class="uk-iconnav">
+											    	<li>327,057 views</li>
+												</ul>
+
+										    	<ul style="float: right;" class="uk-iconnav">
+											    	<li></li>
+											    	<li uk-tooltip="Heart Episode"><a href="" uk-icon="icon: heart">602 </a></li>
+											    	<li uk-tooltip="Share"><a href="" uk-icon="icon: forward"></a></li>
+												</ul>
+											</p>
+											<br>
+
+										    <p>Michael is just one of the many male staff who start vying for the attention of an attractive saleswoman in the office.</p>
+
+										    <div class="uk-container">
+										    	<br>
+										    	<hr class="uk-divider-icon">
+										    	<form class="uk-form-stacked">
+
+												    <div class="uk-margin">
+												        <label class="uk-form-label" for="form-stacked-text">Post a Comment</label>
+												        <div class="uk-form-controls">
+												            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+												        </div>
+												    </div>
+												</form>
+										    	<br>
+										    	<ul class="uk-comment-list">
+												    <li>
+												        <article class="uk-comment uk-visible-toggle">
+												            <header class="uk-comment-header uk-position-relative">
+												                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                    <div class="uk-width-auto">
+												                        <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                    </div>
+												                    <div class="uk-width-expand">
+												                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                    </div>
+												                </div>
+												                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												            </header>
+												            <div class="uk-comment-body">
+												                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												            </div>
+												        </article>
+												        <ul>
+												            <li>
+												                <article class="uk-comment uk-comment-primary uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												            <li>
+												                <article class="uk-comment uk-visible-toggle">
+												                    <header class="uk-comment-header uk-position-relative">
+												                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+												                            <div class="uk-width-auto">
+												                                <img class="uk-comment-avatar" src="assets/Temporary.jpeg" width="80" height="80" alt="">
+												                            </div>
+												                            <div class="uk-width-expand">
+												                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="">Author</a></h4>
+												                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="">12 days ago</a></p>
+												                            </div>
+												                        </div>
+												                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="">Reply</a></div>
+												                    </header>
+												                    <div class="uk-comment-body">
+												                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+												                    </div>
+												                </article>
+												            </li>
+												        </ul>
+												    </li>
+												</ul>
+										        <div>
+										            <a class="uk-button uk-button-text" href="">More Posts</a>
+										        </div>
+										    </div>
+
+										</article>
+				                    </div>
+				                </div>
+				            </li>
+
+				        </ul>
+
+				        
+
+				    </div>
+
+				    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>
